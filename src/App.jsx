@@ -11,13 +11,11 @@ function App() {
 
   // Mapping of author names to their image files
   const authorImages = {
-    "ryan": ryan,
-    "Ryan": ryan,
-    "AJ": AJ,
-    "Danny": Danny,
-    "bassboy": bassboy,
-    "": unknown
-  };
+  ryan: ryan,
+  aj: AJ,
+  danny: Danny,
+  bassboy: bassboy,
+};
 
   // Array of displayed quotes
   const [displayedQuote, setDisplayedQuote] = useState(null);
@@ -28,9 +26,13 @@ function App() {
   }
 
   function getAuthorImage() {
-    // if (!displayedQuote?.author) return null;
-    return authorImages[displayedQuote.author];
-  }
+  if (!displayedQuote) return null;
+
+  const normalizedAuthor =
+    displayedQuote.author?.trim().toLowerCase();
+
+  return authorImages[normalizedAuthor] || unknown;
+}
 
   return (
     <>
