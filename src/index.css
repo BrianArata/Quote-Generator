@@ -1,25 +1,25 @@
 :root {
---text: #2a2438;
---text-light: #ffffff;
---text-h: #120f1a;
+  --text: #2a2438;
+  --text-light: #ffffff;
+  --text-h: #120f1a;
 
---bg: #f6f8fc;
---border: #dfe5ee;
+  --bg: #f6f8fc;
+  --border: #dfe5ee;
 
---code-bg: #eef2f7;
+  --code-bg: #eef2f7;
 
---accent: #7c9473;
---accent-bg: rgba(124, 148, 115, 0.678);
---accent-border: rgba(124, 148, 115, 0.35);
+  --accent: #7c9473;
+  --accent-bg: rgba(124, 148, 115, 0.678);
+  --accent-border: rgba(124, 148, 115, 0.35);
 
---social-bg: rgba(238, 242, 247, 0.7);
+  --social-bg: rgba(238, 242, 247, 0.7);
 
---shadow:
-  rgba(15, 23, 42, 0.08) 0 10px 20px -5px,
-  rgba(15, 23, 42, 0.04) 0 4px 8px -4px;
+  --shadow:
+    rgba(15, 23, 42, 0.08) 0 10px 20px -5px,
+    rgba(15, 23, 42, 0.04) 0 4px 8px -4px;
 
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --sans: system-ui, "Segoe UI", Roboto, sans-serif;
+  --heading: system-ui, "Segoe UI", Roboto, sans-serif;
   --mono: ui-monospace, Consolas, monospace;
 
   font: 18px/145% var(--sans);
@@ -130,6 +130,7 @@ button {
   border: 1px solid var(--border);
   border-radius: 12px;
   background: var(--code-bg);
+  position: relative;
 }
 
 blockquote {
@@ -157,7 +158,24 @@ blockquote::after {
 }
 
 cite {
-  color:  var(--accent);
+  color: var(--accent);
   font-style: normal;
   font-size: 1.5rem;
+}
+
+/* .citation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 10px;
+} */
+
+.authorImage {
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 8px;
+  /* object-fit: cover; */
+  /* background: var(--accent-bg); */
+  padding: 10px 0 0 0;
 }
