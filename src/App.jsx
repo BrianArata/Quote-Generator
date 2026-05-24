@@ -1,10 +1,14 @@
 import { useState } from "react";
-import filteredQuotes from "./assets/filteredQuotes.json"
+import filteredQuotes from "./assets/filteredQuotes2.json"
 import ryan from "./assets/Ryanv1.png"
 import AJ from "./assets/AJv1.png"
 import Danny from "./assets/Dannyv1.png"
 import unknown from "./assets/unkown.png"
 import bassboy from "./assets/bassboy.png"
+import cheff from "./assets/Cheff.png"
+import chrisL from "./assets/chrisL.png"
+import matt from "./assets/MattC.png"
+import carmine from "./assets/carmine.png"
 
 function App() {
   const quotes = filteredQuotes
@@ -15,6 +19,10 @@ function App() {
   aj: AJ,
   danny: Danny,
   bassboy: bassboy,
+  cheff: cheff,
+  chris: chrisL,
+  matt: matt,
+  carmine: carmine,
 };
 
   // Array of displayed quotes
